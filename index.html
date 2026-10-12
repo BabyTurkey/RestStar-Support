@@ -2,81 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RestStar Support</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="RestStar helps restaurants train employees with menu study, flashcards, quizzes, certifications, and progress tracking.">
+  <title>RestStar | Restaurant Training Made Simple</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 850px;
-      margin: 60px auto;
-      padding: 0 24px;
-      line-height: 1.6;
-      color: #172033;
-      background: #f8fafc;
-    }
-
-    h1, h2 {
-      color: #123b72;
-    }
-
-    .card {
-      background: white;
-      border-radius: 16px;
-      padding: 24px;
-      margin-top: 24px;
-      box-shadow: 0 4px 18px rgba(0,0,0,0.06);
-    }
-
-    a {
-      color: #246fd3;
-    }
+    :root{--navy:#112947;--blue:#3469dc;--ink:#17253c;--muted:#5e6d80;--bg:#f5f8fc;--line:#e2e9f3}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif;line-height:1.6}a{color:var(--blue)}.container{max-width:1120px;margin:auto;padding:0 24px}
+    header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:2}.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:76px}.logo{font-size:1.4rem;font-weight:850;color:var(--navy);text-decoration:none;letter-spacing:-.7px}.logo span{color:var(--blue)}nav{display:flex;gap:25px;flex-wrap:wrap}nav a{text-decoration:none;color:var(--ink);font-weight:600;font-size:.95rem}nav a:hover{color:var(--blue)}
+    .hero{padding:100px 0 90px;background:linear-gradient(135deg,#102946 0%,#1d4e89 68%,#3469dc 100%);color:white}.hero-inner{max-width:800px}.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;font-weight:800;color:#b8d2ff}.hero h1{font-size:clamp(2.5rem,5vw,4.5rem);line-height:1.09;letter-spacing:-.045em;margin:18px 0 22px}.hero p{font-size:1.2rem;max-width:650px;color:#e2edff}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-block;padding:13px 23px;border-radius:10px;text-decoration:none;font-weight:750}.btn-primary{background:#fff;color:#163c75}.btn-secondary{border:1px solid #a8c5f3;color:white}.btn-dark{background:var(--blue);color:white}
+    section{padding:76px 0}.section-heading{max-width:700px;margin-bottom:30px}.section-heading h2{font-size:clamp(1.8rem,3vw,2.5rem);line-height:1.18;letter-spacing:-.025em;margin:0 0 12px}.section-heading p{color:var(--muted);margin:0}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.card{background:white;border:1px solid var(--line);border-radius:18px;padding:27px;box-shadow:0 5px 24px #19345a08}.card h3{margin:0 0 9px;color:var(--navy)}.card p{color:var(--muted);margin:0}.symbol{font-size:1.6rem;margin-bottom:16px}.pricing{background:#fff}.price-card{max-width:760px;background:var(--bg);border:1px solid var(--line);border-radius:20px;padding:36px}.price-line{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}.price{font-size:2.7rem;font-weight:850;color:var(--navy);letter-spacing:-.05em}.note{color:var(--muted)}.price-card ul{padding-left:22px}.price-card li{margin:8px 0}.support-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.support-grid .card:last-child{grid-column:1/-1}footer{background:#102946;color:#d9e5f4;padding:28px 0}footer .container{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}footer a{color:#d9e5f4}
+    @media(max-width:760px){.nav{align-items:flex-start;flex-direction:column;padding-top:18px;padding-bottom:18px}nav{gap:16px}.hero{padding:70px 0}.grid,.support-grid{grid-template-columns:1fr}.support-grid .card:last-child{grid-column:auto}section{padding:55px 0}.price-card{padding:24px}}
   </style>
 </head>
 <body>
-  <h1>RestStar Support</h1>
-
-  <p>
-    RestStar is a restaurant training platform designed to help restaurants
-    manage employee training, menu knowledge, flashcards, quizzes,
-    certifications, and training progress.
-  </p>
-
-  <div class="card">
-    <h2>Need Help?</h2>
-
-    <p>
-      If you are experiencing an issue with RestStar or need assistance
-      with your account, please contact us.
-    </p>
-
-    <p>
-      Email:
-      <a href="mailto:poofbush2004@gmail.com">poofbush2004@gmail.com</a>
-    </p>
-  </div>
-
-  <div class="card">
-    <h2>Account Assistance</h2>
-
-    <p>
-      Restaurant employees should contact their restaurant manager for
-      restaurant codes, login information, training assignments, or account access.
-    </p>
-  </div>
-
-  <div class="card">
-    <h2>Technical Support</h2>
-
-    <p>
-      When contacting support, please include a description of the issue,
-      the device you are using, and any error message you received.
-    </p>
-  </div>
-
-  <p>
-    <a href="privacy.html">Privacy Policy</a>
-  </p>
-
-  <p>© 2026 RestStar</p>
+  <header><div class="container nav"><a class="logo" href="#top">Rest<span>Star</span></a><nav aria-label="Main navigation"><a href="#features">Features</a><a href="#pricing">Pricing</a><a href="#support">Support</a><a href="privacy.html">Privacy</a></nav></div></header>
+  <main id="top">
+    <div class="hero"><div class="container hero-inner"><div class="eyebrow">Built for restaurant teams</div><h1>Train smarter.<br>Serve with confidence.</h1><p>Give your team one place to learn the menu, study flashcards, complete quizzes, and track training progress across your restaurant locations.</p><div class="actions"><a class="btn btn-primary" href="#features">Explore features</a><a class="btn btn-secondary" href="#support">Contact us</a></div></div></div>
+    <section id="features"><div class="container"><div class="section-heading"><h2>Everything your team needs to learn and grow</h2><p>RestStar brings everyday restaurant training into one organized platform.</p></div><div class="grid">
+      <article class="card"><div class="symbol" aria-hidden="true">📖</div><h3>Menu knowledge</h3><p>Help employees learn menu items, ingredients, and key details.</p></article>
+      <article class="card"><div class="symbol" aria-hidden="true">🧠</div><h3>Flashcards & quizzes</h3><p>Make studying easier and check understanding with focused practice.</p></article>
+      <article class="card"><div class="symbol" aria-hidden="true">📈</div><h3>Training progress</h3><p>Give managers visibility into employee progress and certifications.</p></article>
+      <article class="card"><div class="symbol" aria-hidden="true">🏢</div><h3>Multiple locations</h3><p>Manage restaurant locations under a single organization.</p></article>
+      <article class="card"><div class="symbol" aria-hidden="true">👥</div><h3>Manager tools</h3><p>Organize employee access and keep training on track.</p></article>
+      <article class="card"><div class="symbol" aria-hidden="true">📱</div><h3>Team access</h3><p>Let authorized managers and employees use their restaurant's training tools.</p></article>
+    </div></div></section>
+    <section id="pricing" class="pricing"><div class="container"><div class="section-heading"><h2>Simple pricing per restaurant location</h2><p>Each restaurant location has its own activation and subscription.</p></div><div class="price-card"><div class="price-line"><span class="price">$150</span><span class="note">per month, per location</span></div><p><strong>$300 one-time activation fee</strong> for each new location.</p><ul><li>Menu study, flashcards, and quizzes</li><li>Employee training progress and certifications</li><li>Organization and location management</li></ul><p class="note">Business registration and online billing are being prepared. Contact support for current onboarding information.</p><a class="btn btn-dark" href="mailto:poofbush2004@gmail.com?subject=RestStar%20Business%20Inquiry">Contact RestStar</a></div></div></section>
+    <section id="support"><div class="container"><div class="section-heading"><h2>Support & account assistance</h2><p>Need help with RestStar? We're here to assist.</p></div><div class="support-grid">
+      <article class="card"><h3>Need help?</h3><p>If you're experiencing an issue or need assistance with your account, email <a href="mailto:poofbush2004@gmail.com">poofbush2004@gmail.com</a>.</p></article>
+      <article class="card"><h3>Account assistance</h3><p>Restaurant employees should contact their restaurant manager for restaurant codes, login information, training assignments, or account access.</p></article>
+      <article class="card"><h3>Technical support</h3><p>When contacting support, please include a description of the issue, the device you are using, and any error message you received.</p></article>
+    </div></div></section>
+  </main>
+  <footer><div class="container"><span>© 2026 RestStar</span><span><a href="privacy.html">Privacy Policy</a> · <a href="mailto:poofbush2004@gmail.com">Contact Support</a></span></div></footer>
 </body>
 </html>
